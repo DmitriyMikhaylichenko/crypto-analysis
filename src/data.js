@@ -634,10 +634,4 @@ export const cryptoAssets = [
     price: 2663,
     date: new Date(),
   },
-  {
-    id: "dogecoin",
-    amount: 1000,
-    price: 0.161,
-    date: new Date(),
-  },
 ];

@@ -21,6 +21,12 @@ const columns = [
     defaultSortOrder: "descend",
     sorter: (a, b) => a.amount - b.amount,
   },
+  {
+    title: "Date",
+    dataIndex: "date",
+    defaultSortOrder: "descend",
+    sorter: (a, b) => a.date - b.date,
+  },
 ];
 
 export default function AssetsTable() {
@@ -30,7 +36,9 @@ export default function AssetsTable() {
     id: a.id,
     price: a.price,
     amount: a.amount,
+    date: a.date.toLocaleString(),
   }));
+
   return (
     <Table
       pagination={false}
